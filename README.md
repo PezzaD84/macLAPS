@@ -5,6 +5,14 @@ Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS s
 
 # Setup
 
+Create an Extension Attribute to store the encrypted password in the Device inventory. You can name this extension attribute whatever you wish but the name is needed in the script later on.
+
+<img width="627" alt="Screenshot 2022-02-02 at 15 53 38" src="https://user-images.githubusercontent.com/89595349/152189069-0c40f763-a409-4e59-9f77-efcddcbfe2ab.png">
+
+You will also need the ID of the extension Attribute which you can grab from the URL.
+
+<img width="520" alt="Screenshot 2022-02-02 at 15 55 11" src="https://user-images.githubusercontent.com/89595349/152189629-1d2fa069-650f-4aea-a3cd-fe158f289158.png">
+
 Upload both Scripts from the git repositry to your Jamf instance and give them a name to go with their function.
 
 <img width="433" alt="Screenshot 2022-02-01 at 10 58 15" src="https://user-images.githubusercontent.com/89595349/151956472-a2c3e199-48a4-489b-a020-a3a0c7a578e7.png">
@@ -14,6 +22,8 @@ Set the parameters in each script and name each $ function to what it does. (eac
 Creation and password cycle script
 
 <img width="865" alt="Screenshot 2022-02-01 at 09 39 04" src="https://user-images.githubusercontent.com/89595349/151956638-ec15e412-65b7-42ea-a0a1-b04016d38f12.png">
+<img width="594" alt="Screenshot 2022-02-02 at 15 59 09" src="https://user-images.githubusercontent.com/89595349/152190062-c1686fe4-6dd1-4595-9975-793949c0ecac.png">
+
 
 Decryption script
 
@@ -28,6 +38,7 @@ In each policy set the script functions with your accounts and URL. The "Secret 
 Creation and password cycle script
 
 <img width="756" alt="Screenshot 2022-02-01 at 09 40 51" src="https://user-images.githubusercontent.com/89595349/151957002-6335e55d-9fec-4331-8995-6fbe7578f3ce.png">
+<img width="465" alt="Screenshot 2022-02-02 at 16 00 38" src="https://user-images.githubusercontent.com/89595349/152190360-5863446d-094c-4f16-a339-ff00568491e5.png">
 
 Decryption script
 
