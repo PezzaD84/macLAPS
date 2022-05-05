@@ -13,6 +13,9 @@ You will also need the ID of the extension Attribute which you can grab from the
 
 <img width="520" alt="Screenshot 2022-02-02 at 15 55 11" src="https://user-images.githubusercontent.com/89595349/152189629-1d2fa069-650f-4aea-a3cd-fe158f289158.png">
 
+Repeat this process for the encrypted secret as well so you end up with 2 Extension attributes.
+<img width="328" alt="Screenshot 2022-05-05 at 10 17 45" src="https://user-images.githubusercontent.com/89595349/166895082-5404fc97-0b00-4b17-9ad7-c2f66da6e516.png">
+
 Upload both Scripts from the git repositry to your Jamf instance and give them a name to go with their function.
 
 <img width="433" alt="Screenshot 2022-02-01 at 10 58 15" src="https://user-images.githubusercontent.com/89595349/151956472-a2c3e199-48a4-489b-a020-a3a0c7a578e7.png">
@@ -21,28 +24,34 @@ Set the parameters in each script and name each $ function to what it does. (eac
 
 Creation and password cycle script
 
-<img width="865" alt="Screenshot 2022-02-01 at 09 39 04" src="https://user-images.githubusercontent.com/89595349/151956638-ec15e412-65b7-42ea-a0a1-b04016d38f12.png">
-<img width="594" alt="Screenshot 2022-02-02 at 15 59 09" src="https://user-images.githubusercontent.com/89595349/152190062-c1686fe4-6dd1-4595-9975-793949c0ecac.png">
+<img width="853" alt="Screenshot 2022-05-05 at 10 20 37" src="https://user-images.githubusercontent.com/89595349/166895529-41a14392-2d27-432a-8f45-6a98a1ee2379.png">
+<img width="850" alt="Screenshot 2022-05-05 at 10 20 51" src="https://user-images.githubusercontent.com/89595349/166895537-d4f25110-2248-48eb-a599-7934ffb9e50f.png">
+
 
 
 Decryption script
 
-<img width="850" alt="Screenshot 2022-02-01 at 09 39 39" src="https://user-images.githubusercontent.com/89595349/151956652-4758f7ca-f657-4212-9417-99885ffe9523.png">
+<img width="885" alt="Screenshot 2022-05-05 at 10 22 22" src="https://user-images.githubusercontent.com/89595349/166895702-52af010f-cb53-456f-8638-d6d26c925496.png">
+
+
 
 Create 2 policies. One for Creating the admin and cycling the password and one for the self service app.
 
 <img width="784" alt="Screenshot 2022-02-01 at 09 40 14" src="https://user-images.githubusercontent.com/89595349/151956838-624198f5-4b63-4854-a833-fce60cb132eb.png">
 
-In each policy set the script functions with your accounts and URL. The "Secret to Encrypt Password" should be a password that only your engineers will know and not pass on to anyone else.
+In each policy set the script functions with your credentials and URL.
 
 Creation and password cycle script
 
-<img width="756" alt="Screenshot 2022-02-01 at 09 40 51" src="https://user-images.githubusercontent.com/89595349/151957002-6335e55d-9fec-4331-8995-6fbe7578f3ce.png">
-<img width="465" alt="Screenshot 2022-02-02 at 16 00 38" src="https://user-images.githubusercontent.com/89595349/152190360-5863446d-094c-4f16-a339-ff00568491e5.png">
+<img width="766" alt="Screenshot 2022-05-05 at 10 24 21" src="https://user-images.githubusercontent.com/89595349/166896880-1f795aca-49df-4975-8625-8eac9adf4ea5.png">
+<img width="767" alt="Screenshot 2022-05-05 at 10 23 54" src="https://user-images.githubusercontent.com/89595349/166896895-97e946f7-fcc7-4876-9457-c97e58437ef6.png">
+
+
 
 Decryption script
 
-<img width="775" alt="Screenshot 2022-02-01 at 10 46 54" src="https://user-images.githubusercontent.com/89595349/151957020-dbf4cbb2-47aa-49e2-beb2-51182d27e9d5.png">
+<img width="766" alt="Screenshot 2022-05-05 at 10 24 43" src="https://user-images.githubusercontent.com/89595349/166896918-123606e1-133c-4bd8-aee8-d91f3b4571a8.png">
+
 
 Make sure the Decryption script is set as a self service app. You can upload your own Icon and name it how you wish.
 
@@ -62,9 +71,6 @@ Enter the device name of which you require the local admin password for
 
 <img width="532" alt="Screenshot 2022-02-01 at 10 42 19" src="https://user-images.githubusercontent.com/89595349/151957941-cff876c6-af5a-4ed4-9b88-2343b2238eb0.png">
 
-Enter the password which was used as the "Secret to Encrypt Password"
-
-<img width="532" alt="Screenshot 2022-02-01 at 10 42 34" src="https://user-images.githubusercontent.com/89595349/151958015-191b36c1-315d-4b67-b997-aae9bdeea7b1.png">
 
 The engineer will then be presented with the password which will disapear after 10seconds
 
