@@ -1,0 +1,10 @@
+Change log of feature updates and improvments
+
+#macOSLAPS - v2
+
+# - API access updated to use barer token
+    Encrypted API credentials will need to be provided as a variable in Jamf.
+# - Decryption password no longer needed
+    You no longer need to set a known password to use as the decryption key. This is now randomised and encrypted and then automatically pulled from Jamf during the decryption process.
+# - Use of second extension attribute added to manage random decryption secret
+    New Extension attribute added to store the encrypted decryption secret.
