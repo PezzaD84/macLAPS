@@ -1,6 +1,6 @@
 Change log of feature updates and improvments
 
-#macOSLAPS - v2
+# macOSLAPS - v2
 
 # - API access updated to use barer token
     Encrypted API credentials will need to be provided as a variable in Jamf.
