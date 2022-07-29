@@ -3,7 +3,7 @@ LAPS solution for macOS managed with Jamf
 
 Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encrypts the password, uploads the encrypted password to Jamf and then a self service app is used to decrypt and show the local admin password to your engineers.
 
-v2 now uploaded and available. Check the Change log for changes and improvments.
+v3 now uploaded and available. Check the Change log for changes and improvments.
 
 # Setup
 
