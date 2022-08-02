@@ -2,7 +2,7 @@ Change log of feature updates and improvments
 
 # macOSLAPS - v3
 
-# - Temporary local storage of encrypted password and encryption secret reomved
+# - Temporary local storage of encrypted password and encryption secret removed
     Local files are no longer created containing the variables for later use.
 # - K flag removed from curl calls
     The -k flag has been removed from all curl calls to help prevent MITM Attacks.
