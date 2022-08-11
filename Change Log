@@ -1,5 +1,12 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v4
+
+# - Account creation simplified
+    Account creation has be changed to use the sysadminctl command which simplifies the account creation process.
+# - LAPS Account Hanging at log in issue resolved
+    An issue had come to my attention that the LAPS account would hang at log in. This has been resolved now by suppressing the setup assistant at first log in.
+
 # macOSLAPS - v3
 
 # - Temporary local storage of encrypted password and encryption secret removed
