@@ -1,5 +1,20 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2
+
+# - API Calls rewritten
+    API calls for reading and writting to the extension attributes have been rewritten to free up JAMF Variables. General rewritting of API calls has also been done.
+# - Additional Logs added
+    Additional logging has been added which creates a local log of the LAPS Setup process and shows any errors. There is also a log kept form the decryption app to view who has requested the LAPS password.
+# - Decryption App Updated
+    The Decryption app has been updated to use swift Dialog which gives the user a nicer interface to request and view the LAPS password.
+# - Password complexity added
+    You can now specify the length of the admin password and whether it has to contain a special character.
+# - Cycle Password once viewed
+    You can now specify if the LAPS Password should be reset after being viewed. If set, the password will be reset at the next reboot.
+# - Extension attribute names
+    The names of the extension attributes can no longer be set to any name. They must now be "LAPS CryptKey" and "LAPS Secret".
+
 # macOSLAPS - v1.4
 
 # - Account creation simplified
