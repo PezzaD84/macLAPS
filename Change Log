@@ -10,7 +10,7 @@ Change log of feature updates and improvments
     The Decryption app has been updated to use swift Dialog which gives the user a nicer interface to request and view the LAPS password.
 # - Password complexity added
     You can now specify the length of the admin password and whether it has to contain a special character.
-# - Cycle Password once viewed
+# - Cycle Password once viewed (**CURRENTLY ONLY WORKS IF PASSWORD IS VIEWED ON DEVICE TO BE RESET**)
     You can now specify if the LAPS Password should be reset after being viewed. If set, the password will be reset at the next reboot.
 # - Extension attribute names
     The names of the extension attributes can no longer be set to any name. They must now be "LAPS CryptKey" and "LAPS Secret".
