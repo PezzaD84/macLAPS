@@ -8,6 +8,8 @@ v2.1 now uploaded and available. Check the Change log for changes and improvment
 LAPS v2 uses Swift Dialog the original project can be found here https://github.com/bartreardon/swiftDialog
 All credit for swift Dialog goes to the owner and creator please support their project.
 
+If you are liking the work then help me stay awake to carry on writing by buying me a coffee ☕️ https://www.buymeacoffee.com/pezza
+
 # Setup
 
 Create an Extension Attribute to store the encrypted password in the Device inventory. Name this extension attribute "LAPS CryptKey".
