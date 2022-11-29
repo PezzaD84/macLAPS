@@ -56,6 +56,11 @@ Make sure the Decryption script is set as a self service app. You can upload you
 
 <img width="605" alt="Screenshot 2022-02-01 at 09 41 33" src="https://user-images.githubusercontent.com/89595349/151957228-d8765197-cfb8-49e4-98e7-79688d3fde8f.png">
 
+Create a smart Group called "LAPS Reset Password" and set the criteria as below. Scope the "Reset Password" Policy to ONLY group.
+
+![Screenshot 2022-11-29 at 09 51 53](https://user-images.githubusercontent.com/89595349/204496891-59437751-94f8-470c-b520-deaf1324d7af.png)
+
+
 # Decryption Self Service App
 
 The decryption self service policy can be scoped to your Engineers so they can view the local admin password.
