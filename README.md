@@ -74,3 +74,9 @@ Enter the device name of which you require the local admin password for
 The engineer will then be presented with the password which will disapear after 10seconds
 
 <img width="727" alt="Screenshot 2022-09-28 at 16 32 05 copy" src="https://user-images.githubusercontent.com/89595349/204497771-623d1a81-65f7-41b2-8688-846d5b1b2487.png">
+
+# Computer Inventory Display
+
+If all is working ok then in the computer inventory record you should see the Extension attributes populated as below. Please note, none of these are the local admin passwords and will not do anything if just copied and pasted.
+
+![Screenshot 2022-11-29 at 10 08 04](https://user-images.githubusercontent.com/89595349/204500891-def63602-61d4-452d-9232-d179d0bb52fb.png)
