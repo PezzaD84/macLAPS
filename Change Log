@@ -1,5 +1,10 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2.1
+
+# - Cycle Password once viewed
+    You can now specify if the LAPS Password should be reset after being viewed. If set, the password will be reset at the next reboot from the reset Password policy.
+
 # macOSLAPS - v2
 
 # - API Calls rewritten
