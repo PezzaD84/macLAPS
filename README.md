@@ -69,9 +69,8 @@ The app works as follows:
 
 Enter the device name of which you require the local admin password for
 
-<img width="727" alt="Screenshot 2022-09-28 at 16 31 52" src="https://user-images.githubusercontent.com/89595349/192821933-757267f3-204e-4b36-a30a-c76193236daf.png">
+<img width="727" alt="Screenshot 2022-09-28 at 16 31 52 copy" src="https://user-images.githubusercontent.com/89595349/204497692-63c50604-7d21-4e00-a213-fe4b609b0632.png">
 
 The engineer will then be presented with the password which will disapear after 10seconds
 
-<img width="727" alt="Screenshot 2022-09-28 at 16 32 05" src="https://user-images.githubusercontent.com/89595349/192822036-f9e6a968-3e84-4887-a5af-0a100ca0e077.png">
-
+<img width="727" alt="Screenshot 2022-09-28 at 16 32 05 copy" src="https://user-images.githubusercontent.com/89595349/204497771-623d1a81-65f7-41b2-8688-846d5b1b2487.png">
