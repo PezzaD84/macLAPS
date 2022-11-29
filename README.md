@@ -5,6 +5,9 @@ Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS s
 
 v2.1 now uploaded and available. Check the Change log for changes and improvments.
 
+LAPS v2 uses Swift Dialog the original project can be found here https://github.com/bartreardon/swiftDialog
+All credit for swift Dialog goes to the owner and creator please support their project.
+
 # Setup
 
 Create an Extension Attribute to store the encrypted password in the Device inventory. Name this extension attribute "LAPS CryptKey".
