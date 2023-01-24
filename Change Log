@@ -1,5 +1,10 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2.2
+
+# - Require Device name and Reason
+    Device name is now a requirement of the decryption app along with a reason for viewing the password. These are all passed to the LAPS log along with the user requesting the password. 
+
 # macOSLAPS - v2.1
 
 # - Cycle Password once viewed
