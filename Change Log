@@ -8,6 +8,8 @@ Change log of feature updates and improvments
     A bug was found that gave false positive results when either the CryptKey or SecretKey had failed to upload. This has now been fixed.
 # - LAPS pkg updated
     Generic branding was found to be the wrong image. This has now been fixed.
+# - Slack WebHook intergration added
+    Both the Creation and Decryption scripts now have the option to add in a Slack webHooks app which will provide notifications and log info directly into a slack channel.
     
 # macOSLAPS - v2.1
 
