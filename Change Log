@@ -4,6 +4,8 @@ Change log of feature updates and improvments
 
 # - Require Device name and Reason
     Device name is now a requirement of the decryption app along with a reason for viewing the password. These are all passed to the LAPS log along with the user requesting the password. 
+# - Fixed bug in escrow check
+    A bug was found that gave false positive results when either the CryptKey or SecretKey had failed to upload. This has now been fixed.
 
 # macOSLAPS - v2.1
 
