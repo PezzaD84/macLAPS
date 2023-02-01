@@ -1,4 +1,14 @@
 # macOSLAPS
+
+
+**Sections**
+>- [Initial Setup](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#setup)
+>- [Decryption App Setup](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#decryption-self-service-app)
+>- [Inventory View](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#computer-inventory-display)
+>- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#slack-integration)
+
+
+
 LAPS solution for macOS managed with Jamf
 
 Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encrypts the password, uploads the encrypted password to Jamf and then a self service app is used to decrypt and show the local admin password to your engineers.
@@ -14,6 +24,7 @@ All credit for swift Dialog goes to the owner and creator please support their p
 
 If you are liking the work then help me stay awake to carry on writing by buying me a coffee ☕️ https://www.buymeacoffee.com/pezza
 
+---
 # Setup
 
 Create an Extension Attribute to store the encrypted password in the Device inventory. Name this extension attribute "LAPS CryptKey".
@@ -69,7 +80,7 @@ Create a smart Group called "LAPS Reset Password" and set the criteria as below.
 
 ![Screenshot 2022-11-29 at 09 51 53](https://user-images.githubusercontent.com/89595349/204496891-59437751-94f8-470c-b520-deaf1324d7af.png)
 
-
+---
 # Decryption Self Service App
 
 The decryption self service policy can be scoped to your Engineers so they can view the local admin password.
@@ -84,8 +95,46 @@ The engineer will then be presented with the password which will disapear after 
 
 <img width="727" alt="Screenshot 2022-09-28 at 16 32 05 copy" src="https://user-images.githubusercontent.com/89595349/204497771-623d1a81-65f7-41b2-8688-846d5b1b2487.png">
 
+---
 # Computer Inventory Display
 
 If all is working ok then in the computer inventory record you should see the Extension attributes populated as below. Please note, none of these are the local admin passwords and will not do anything if just copied and pasted.
 
 ![Screenshot 2022-11-29 at 10 08 04](https://user-images.githubusercontent.com/89595349/204500891-def63602-61d4-452d-9232-d179d0bb52fb.png)
+
+---
+# Slack integration
+
+The LAPS Script includes a feature to push notifications to a Slack Channel by using a webhook. To enable these features you will need to create a new app in your slack tenent which you can do [here](https://slack.com/intl/en-gb/help/articles/115005265063-Incoming-webhooks-for-Slack) by following the step by step guide.
+
+Once the app is created make a note of the webhook URL as you will need to use this in a Jamf variable.
+
+![Screenshot 2023-02-01 at 10 45 11](https://user-images.githubusercontent.com/89595349/216022180-ea5843ed-1a21-474b-bbb7-f1f1d8187074.png)
+
+You will need to add a few extra details to your scripts.
+
+For the creation script Parameter 9 should be set up as below.
+
+Script Option
+
+![Screenshot 2023-02-01 at 10 37 57](https://user-images.githubusercontent.com/89595349/216022373-1c3c1253-e7a9-4ab6-9c83-87a6e2ffe51e.png)
+
+Policy configuration
+
+![Screenshot 2023-02-01 at 10 37 18](https://user-images.githubusercontent.com/89595349/216022559-9fbec16b-b5b7-4291-89d6-cfa697be3f53.png)
+
+
+The decryption script should be set up as below. You can optionally add your service desk to parameter 8 which will enable the "Challenge Request" Button. 
+
+Script Options
+
+![Screenshot 2023-02-01 at 10 38 12](https://user-images.githubusercontent.com/89595349/216022655-a296e72c-d895-4032-9640-bd8d393843ac.png)
+
+Policy configuration
+
+![Screenshot 2023-02-01 at 10 37 38](https://user-images.githubusercontent.com/89595349/216022705-6eaf612d-4619-49eb-a6c9-ce07ea325ba0.png)
+
+
+If everything is configured correctly you should see the follow notifications in your choosen Slack channel.
+
+<img width="675" alt="Screenshot 2023-01-24 at 15 30 12" src="https://user-images.githubusercontent.com/89595349/216022860-01f53217-d198-45ce-be71-8ee117657ca7.png">
