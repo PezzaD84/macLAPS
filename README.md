@@ -135,6 +135,6 @@ Policy configuration
 ![Screenshot 2023-02-01 at 10 37 38](https://user-images.githubusercontent.com/89595349/216022705-6eaf612d-4619-49eb-a6c9-ce07ea325ba0.png)
 
 
-If everything is configured correctly you should see the follow notifications in your choosen Slack channel.
+If everything is configured correctly you should see the follow notifications in your chosen Slack channel.
 
 <img width="675" alt="Screenshot 2023-01-24 at 15 30 12" src="https://user-images.githubusercontent.com/89595349/216022860-01f53217-d198-45ce-be71-8ee117657ca7.png">
