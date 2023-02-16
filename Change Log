@@ -1,5 +1,12 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2.2.1
+
+# - Check for existing duplicate admin account
+    A failsafe has been put in to stop the creation of the LAPS account if an existing account exists with the same name on first run.
+# - Password validation
+    Password validation has been added to the password reset section of the script. The script will now error out if password validation fails.
+    
 # macOSLAPS - v2.2
 
 # - Require Device name and Reason
