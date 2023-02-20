@@ -2,10 +2,10 @@
 
 
 **Sections**
->- [Initial Setup](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#setup)
->- [Decryption App Setup](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#decryption-self-service-app)
->- [Inventory View](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#computer-inventory-display)
->- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS/edit/main/README.md#slack-integration)
+>- [Initial Setup](https://github.com/PezzaD84/macOSLAPS#setup)
+>- [Decryption App Setup](https://github.com/PezzaD84/macOSLAPS#decryption-self-service-app)
+>- [Inventory View](https://github.com/PezzaD84/macOSLAPS#computer-inventory-display)
+>- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS#slack-integration)
 
 
 
