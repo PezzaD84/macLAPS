@@ -6,9 +6,9 @@
 >- [Decryption App Setup](https://github.com/PezzaD84/macOSLAPS#decryption-self-service-app)
 >- [Inventory View](https://github.com/PezzaD84/macOSLAPS#computer-inventory-display)
 >- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS#slack-integration)
+>- [Troubleshooting](https://github.com/PezzaD84/macOSLAPS#Troubleshooting)
 
-
-
+---
 LAPS solution for macOS managed with Jamf
 
 Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encrypts the password, uploads the encrypted password to Jamf and then a self service app is used to decrypt and show the local admin password to your engineers.
@@ -138,3 +138,11 @@ Policy configuration
 If everything is configured correctly you should see the follow notifications in your chosen Slack channel.
 
 <img width="675" alt="Screenshot 2023-01-24 at 15 30 12" src="https://user-images.githubusercontent.com/89595349/216022860-01f53217-d198-45ce-be71-8ee117657ca7.png">
+
+---
+# Troubleshooting
+
+If a local account with the same name as the LAPS account exists then the setup process will fail.
+<img width="532" alt="Screenshot 2023-02-23 at 09 37 03" src="https://user-images.githubusercontent.com/89595349/220871577-f748744e-05d5-48de-a798-ac287393358b.png">
+
+Solution - Remove any local accounts with the existing name or choose a new name for the LAPS account being created.
