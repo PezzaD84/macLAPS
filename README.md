@@ -142,7 +142,18 @@ If everything is configured correctly you should see the follow notifications in
 ---
 # Troubleshooting
 
+### Account Duplication
 If a local account with the same name as the LAPS account exists then the setup process will fail.
 <img width="532" alt="Screenshot 2023-02-23 at 09 37 03" src="https://user-images.githubusercontent.com/89595349/220871577-f748744e-05d5-48de-a798-ac287393358b.png">
 
-Solution - Remove any local accounts with the existing name or choose a new name for the LAPS account being created.
+In this case it is best practice to remove any local accounts with the existing name or choose a new name for the LAPS account being created.
+<br>
+<br>
+<br>
+### Authentication issues
+You might start noticing the decrytped password is not working or the logs show errors such as the following.
+>2023-02-17 15:15:32.094 sysadminctl[13006:77173] Operation is not permitted without secure token unlock.
+<dscl_cmd> DS Error: -14090 (eDSAuthFailed)
+Authentication for node /Local/Default failed. (-14090, eDSAuthFailed)
+
+This could be a number of issues, for example, the encoded credentials are incorrect or for some reason they did not escrow to Jamf and have been overwritten with an incorrect password.<br>In this case it is recommended to reset the existing LAPS configuration using the reset script here https://github.com/PezzaD84/macOSLAPS/blob/main/LAPS%20Reset%20Script
