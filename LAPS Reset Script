@@ -1,0 +1,57 @@
+#!/bin/bash
+#
+# Created by Perry 23/2/2023
+#
+# Reset LAPS Configuration
+#
+# JAMF Script Variables
+# $4: Local LAPS Account
+#
+#################################################################
+
+LAPSLOG="/Library/.LAPS/Logs/LAPS.log"
+
+LAPSaccount="$4"
+
+startMessage=$(osascript -e 'Display dialog "You are about to reset all LAPS configuration on this device.\n\nThis will remove the LAPS account and all the LAPS logs.\n\nAre you sure you want to continue?" buttons {"Quit","Yes"} default button 1 with title "LAPS Reset" with icon alias "System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:AlertStopIcon.icns"')
+
+if echo $startMessage | grep 'Yes'; then
+	echo "LAPS Configuration will now be reset....."
+else
+	echo "LAPS will not be reset. User Quit."
+	exit 0
+fi
+
+if [ -f "$LAPSLOG" ]; then
+	echo "LAPS Log found. Removing log files now....."
+	rm -r /Library/.LAPS/
+else
+	echo "No LAPS Log files found. Moving on....."
+fi
+
+if dscl . -list /Users | grep -x -i "$LAPSaccount"; then
+	echo "LAPS Account found. Removing account and associated files and folders now....."
+	
+	echo "Removing $LAPSaccount from admin users group....."
+	dseditgroup -o edit -d $LAPSaccount -t user admin
+	sleep 2
+	
+	echo "Removing $LAPSaccount from the local device....."
+	dscl . -delete /Users/$LAPSaccount
+	sleep 2
+	
+	echo "Removing $LAPSaccount files and folders....."
+	rm -rf /Users/$LAPSaccount
+	sleep 2
+	
+	stillExists=$(dscl . -list /Users | grep -x -i "$LAPSaccount")
+	
+	if [[ $stillExists == "" ]]; then
+		echo "Success - LAPS Account has been removed and reset."
+		exit 0
+	fi
+	exit 1
+else
+	echo "LAPS Account not found. Exiting"
+	exit 0
+fi
