@@ -3,7 +3,7 @@
 
 **Sections**
 >- [Initial Setup](https://github.com/PezzaD84/macOSLAPS#setup)
->- [Decryption App Setup](https://github.com/PezzaD84/macOSLAPS#decryption-self-service-app)
+>- [Decoder App Setup](https://github.com/PezzaD84/macOSLAPS#decoder-self-service-app)
 >- [Inventory View](https://github.com/PezzaD84/macOSLAPS#computer-inventory-display)
 >- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS#slack-integration)
 >- [Troubleshooting](https://github.com/PezzaD84/macOSLAPS#Troubleshooting)
@@ -81,9 +81,9 @@ Create a smart Group called "LAPS Reset Password" and set the criteria as below.
 ![Screenshot 2022-11-29 at 09 51 53](https://user-images.githubusercontent.com/89595349/204496891-59437751-94f8-470c-b520-deaf1324d7af.png)
 
 ---
-# Decryption Self Service App
+# Decoder Self Service App
 
-The decryption self service policy can be scoped to your Engineers so they can view the local admin password.
+The decoder self service policy can be scoped to your Engineers so they can view the local admin password.
 
 The app works as follows:
 
