@@ -11,7 +11,7 @@
 ---
 LAPS solution for macOS managed with Jamf
 
-Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encrypts the password, uploads the encrypted password to Jamf and then a self service app is used to decrypt and show the local admin password to your engineers.
+Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encodes the password, uploads the encoded password to Jamf and then a self service app is used to decrypt and show the local admin password to your engineers.
 
 The LAPS Script also includes the ability to redirect notifications to Slack using the WebHooks app. (Thanks Martijn for the idea https://github.com/ons-mart)
 
@@ -27,11 +27,11 @@ If you are liking the work then help me stay awake to carry on writing by buying
 ---
 # Setup
 
-Create an Extension Attribute to store the encrypted password in the Device inventory. Name this extension attribute "LAPS CryptKey".
+Create an Extension Attribute to store the encoded password in the Device inventory. Name this extension attribute "LAPS CryptKey".
 
 <img width="627" alt="Screenshot 2022-02-02 at 15 53 38" src="https://user-images.githubusercontent.com/89595349/152189069-0c40f763-a409-4e59-9f77-efcddcbfe2ab.png">
 
-Repeat this process for the encrypted secret calling it "LAPS Secret" and password reset called "LAPS Reset Password". You will end up with 3 Extension attributes.
+Repeat this process for the encoded secret calling it "LAPS Secret" and password reset called "LAPS Reset Password". You will end up with 3 Extension attributes.
 
 ![Screenshot 2022-11-29 at 09 41 02](https://user-images.githubusercontent.com/89595349/204494276-47121ac0-c28e-4ae1-92b3-dee0a891e7de.png)
 
@@ -124,7 +124,7 @@ Policy configuration
 ![Screenshot 2023-02-01 at 10 37 18](https://user-images.githubusercontent.com/89595349/216022559-9fbec16b-b5b7-4291-89d6-cfa697be3f53.png)
 
 
-The decryption script should be set up as below. You can optionally add your service desk to parameter 8 which will enable the "Challenge Request" Button. 
+The decoder script should be set up as below. You can optionally add your service desk to parameter 8 which will enable the "Challenge Request" Button. 
 
 Script Options
 
