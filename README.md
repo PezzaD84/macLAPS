@@ -11,7 +11,7 @@
 ---
 LAPS solution for macOS managed with Jamf
 
-Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encodes the password, uploads the encoded password to Jamf and then a self service app is used to decrypt and show the local admin password to your engineers.
+Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encodes the password, uploads the encoded password to Jamf and then a self service app is used to decode and show the local admin password to your engineers.
 
 The LAPS Script also includes the ability to redirect notifications to Slack using the WebHooks app. (Thanks Martijn for the idea https://github.com/ons-mart)
 
@@ -49,7 +49,7 @@ Creation and password cycle script
 
 <img width="853" alt="Screenshot 2022-09-28 at 16 15 05" src="https://user-images.githubusercontent.com/89595349/192817682-9e6c43b1-3630-4e39-810e-3037e0534af8.png">
 
-Decryption script
+Decoder script
 
 <img width="860" alt="Screenshot 2022-09-28 at 16 16 25" src="https://user-images.githubusercontent.com/89595349/192817875-02d04ec0-0945-4568-87f8-61c0e0153fe2.png">
 
@@ -57,7 +57,7 @@ Decryption script
 Create 4 policies.
 - One for Creating the admin and cycling the password. Create this with a trigger of "Ongoing" and a custom trigger "CreateLAPS". Add the Script and pkg.
 - One for Running the LAPS Script Monthly using the custom trigger. Enable the "Files and Processes" Payload and then in the "Execute command" option enter "jamf policy -event CreateLAPS"
-- One for the self service Decryption app.
+- One for the self service Decoder app.
 - One for cycling the password once its viewed.
 
 ![Screenshot 2022-11-29 at 09 46 54](https://user-images.githubusercontent.com/89595349/204496107-98058cd2-a86f-4116-b570-8e036b9d7ef1.png)
@@ -68,11 +68,11 @@ Creation and password cycle script
 
 <img width="770" alt="Screenshot 2022-09-28 at 16 25 26" src="https://user-images.githubusercontent.com/89595349/192820654-4929ebd1-0b39-4890-8593-4e27c105c3e2.png">
 
-Decryption script
+Decoder script
 
 <img width="764" alt="Screenshot 2022-09-28 at 16 28 10" src="https://user-images.githubusercontent.com/89595349/192820995-5650be3d-1d32-43b1-8941-525f96d56612.png">
 
-Make sure the Decryption script is set as a self service app. You can upload your own Icon and name it how you wish.
+Make sure the Decoder script is set as a self service app. You can upload your own Icon and name it how you wish.
 
 <img width="605" alt="Screenshot 2022-02-01 at 09 41 33" src="https://user-images.githubusercontent.com/89595349/151957228-d8765197-cfb8-49e4-98e7-79688d3fde8f.png">
 
