@@ -5,8 +5,11 @@
 >- [Initial Setup](https://github.com/PezzaD84/macOSLAPS#setup)
 >- [Decoder App Setup](https://github.com/PezzaD84/macOSLAPS#decoder-self-service-app)
 >- [Inventory View](https://github.com/PezzaD84/macOSLAPS#computer-inventory-display)
+>- [Addtional Extension Attributes](https://github.com/PezzaD84/macOSLAPS#Addtional-Extension-Attributes)
 >- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS#slack-integration)
 >- [Troubleshooting](https://github.com/PezzaD84/macOSLAPS#Troubleshooting)
+<br>
+<br>
 
 ---
 LAPS solution for macOS managed with Jamf
@@ -23,6 +26,10 @@ LAPS v2 uses Swift Dialog the original project can be found here [Swift Dialog](
 All credit for swift Dialog goes to the owner and creator please support their project.
 
 If you are liking the work then help me stay awake to carry on writing by buying me a coffee ☕️ https://www.buymeacoffee.com/pezza
+<br>
+<br>
+<br>
+<br>
 
 ---
 # Setup
@@ -79,6 +86,10 @@ Make sure the Decoder script is set as a self service app. You can upload your o
 Create a smart Group called "LAPS Reset Password" and set the criteria as below. Scope the "Reset Password" Policy to ONLY this group.
 
 ![Screenshot 2022-11-29 at 09 51 53](https://user-images.githubusercontent.com/89595349/204496891-59437751-94f8-470c-b520-deaf1324d7af.png)
+<br>
+<br>
+<br>
+<br>
 
 ---
 # Decoder Self Service App
@@ -94,6 +105,10 @@ Enter the device name of which you require the local admin password for
 The engineer will then be presented with the password which will disapear after 10seconds
 
 <img width="727" alt="Screenshot 2022-09-28 at 16 32 05 copy" src="https://user-images.githubusercontent.com/89595349/204497771-623d1a81-65f7-41b2-8688-846d5b1b2487.png">
+<br>
+<br>
+<br>
+<br>
 
 ---
 # Computer Inventory Display
@@ -101,6 +116,25 @@ The engineer will then be presented with the password which will disapear after 
 If all is working ok then in the computer inventory record you should see the Extension attributes populated as below. Please note, none of these are the local admin passwords and will not do anything if just copied and pasted.
 
 ![Screenshot 2022-11-29 at 10 08 04](https://user-images.githubusercontent.com/89595349/204500891-def63602-61d4-452d-9232-d179d0bb52fb.png)
+<br>
+<br>
+<br>
+<br>
+
+---
+# Additional Extension Attributes
+
+There are additional extension attributes which can display more in formation in JAMF. These Extension attributes display the Creation date, the last Cycled date and the last date and time the password was decoded and viewed.
+<br>
+<br>
+The extension attributes can be found [here](https://github.com/PezzaD84/macOSLAPS/tree/main/LAPS%20EA%20Scripts) and then uploaded to JAMF like any other Extension attribute.
+
+<img width="717" alt="Screenshot 2023-04-25 at 12 03 52" src="https://user-images.githubusercontent.com/89595349/234260180-8c1dd405-0fba-4d77-8233-4d7289b0f889.png">
+
+<br>
+<br>
+<br>
+<br>
 
 ---
 # Slack integration
@@ -138,6 +172,10 @@ Policy configuration
 If everything is configured correctly you should see the follow notifications in your chosen Slack channel.
 
 <img width="675" alt="Screenshot 2023-01-24 at 15 30 12" src="https://user-images.githubusercontent.com/89595349/216022860-01f53217-d198-45ce-be71-8ee117657ca7.png">
+<br>
+<br>
+<br>
+<br>
 
 ---
 # Troubleshooting
@@ -150,6 +188,7 @@ In this case it is best practice to remove any local accounts with the existing 
 <br>
 <br>
 <br>
+
 ### Authentication issues
 You might start noticing the decrytped password is not working or the logs show errors such as the following.
 >2023-02-17 15:15:32.094 sysadminctl[13006:77173] Operation is not permitted without secure token unlock.
