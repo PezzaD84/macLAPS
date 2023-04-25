@@ -124,7 +124,7 @@ If all is working ok then in the computer inventory record you should see the Ex
 ---
 # Additional Extension Attributes
 
-There are additional extension attributes which can display more in formation in JAMF. These Extension attributes display the Creation date, the last Cycled date and the last date and time the password was decoded and viewed.
+There are additional extension attributes which can display more information in JAMF. These Extension attributes display the Creation date, the last Cycled date and the last date and time the password was decoded and viewed.
 <br>
 <br>
 The extension attributes can be found [here](https://github.com/PezzaD84/macOSLAPS/tree/main/LAPS%20EA%20Scripts) and then uploaded to JAMF like any other Extension attribute.
