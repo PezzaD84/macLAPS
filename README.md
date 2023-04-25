@@ -5,7 +5,7 @@
 >- [Initial Setup](https://github.com/PezzaD84/macOSLAPS#setup)
 >- [Decoder App Setup](https://github.com/PezzaD84/macOSLAPS#decoder-self-service-app)
 >- [Inventory View](https://github.com/PezzaD84/macOSLAPS#computer-inventory-display)
->- [Addtional Extension Attributes](https://github.com/PezzaD84/macOSLAPS#Addtional-Extension-Attributes)
+>- [Addtional Extension Attributes](https://github.com/PezzaD84/macOSLAPS#Additional-Extension-Attributes)
 >- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS#slack-integration)
 >- [Troubleshooting](https://github.com/PezzaD84/macOSLAPS#Troubleshooting)
 <br>
