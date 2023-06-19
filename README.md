@@ -195,4 +195,4 @@ You might start noticing the decrytped password is not working or the logs show 
 <dscl_cmd> DS Error: -14090 (eDSAuthFailed)
 Authentication for node /Local/Default failed. (-14090, eDSAuthFailed)
 
-This could be a number of issues, for example, the encoded credentials are incorrect or for some reason they did not escrow to Jamf and have been overwritten with an incorrect password.<br>In this case it is recommended to reset the existing LAPS configuration using the reset script here [LAPS Reset Script](https://github.com/PezzaD84/macOSLAPS/blob/main/LAPS%20Reset%20Script)
+This could be a number of issues, for example, the encoded credentials are incorrect or for some reason they did not escrow to Jamf and have been overwritten with an incorrect password.<br>In this case it is recommended to reset the existing LAPS configuration using the reset script here [LAPS Reset Script](https://github.com/PezzaD84/macOSLAPS/blob/main/LAPS%20Reset%20Script) (Please make sure you check the script header to know what JAMF Variables need filling out.)
