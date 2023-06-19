@@ -55,7 +55,7 @@ fi
 
 if [ -f "$LAPSLOG" ]; then
 	echo "LAPS Log found. Removing log files now....."
-	rm -r /Library/.LAPS/
+	rm -r /Library/.LAPS/Logs/
 else
 	echo "No LAPS Log files found. Moving on....."
 fi
