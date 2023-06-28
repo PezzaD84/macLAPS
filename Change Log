@@ -6,6 +6,8 @@ Change log of feature updates and improvments
     A failsafe has been put in to stop the creation of the LAPS account if an existing account exists with the same name on first run.
 # - Password validation
     Password validation has been added to the password reset section of the script. The script will now error out if password validation fails.
+# - Decoder script now manages the installation and validation of Swift Dialog
+    You no longer have to install the LAPS.pkg to install the branding and Swift Dialog app. This is now done using automated script functions to validate the installation and version of Swift Dialog.
     
 # macOSLAPS - v2.2
 
