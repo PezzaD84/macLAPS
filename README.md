@@ -63,7 +63,7 @@ Decoder script
 
 Create 4 policies.
 - One for Creating the admin and cycling the password. Create this with a trigger of "Ongoing" and a custom trigger "CreateLAPS". Add the Script and pkg.
-- One for Running the LAPS Script Monthly using the custom trigger. Enable the "Files and Processes" Payload and then in the "Execute command" option enter "jamf policy -event CreateLAPS"
+- One for Running the LAPS Script Monthly using the custom trigger of the previous policy. Enable the "Files and Processes" Payload and then in the "Execute command" option enter "jamf policy -event CreateLAPS"
 - One for the self service Decoder app.
 - One for cycling the password once its viewed.
 
