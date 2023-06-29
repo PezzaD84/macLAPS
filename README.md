@@ -71,6 +71,8 @@ Create 4 policies.
 
 In each policy set the script functions with your credentials and URL.
 
+_Please note that setting up the main policy in this way with a custom trigger, requires the trigger to be added to a provisioning workflow such as DEP Notify or SwiftDialog, where a script will call this custom trigger to run the policy. If you do not use these types of provisioning workflows then you can set this to trigger at enrollment or check-in. Just be carful that if set to run at check-in this will run the policy and cycle the LAPS account at every check-in._
+
 Creation and password cycle script
 
 <img width="770" alt="Screenshot 2022-09-28 at 16 25 26" src="https://user-images.githubusercontent.com/89595349/192820654-4929ebd1-0b39-4890-8593-4e27c105c3e2.png">
