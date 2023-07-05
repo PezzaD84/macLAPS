@@ -1,5 +1,10 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2.2.2
+
+# - Additional Error Checking added
+    Additional checks have been added to the script to check for previous failures and to clean up any existing LAPS logs and LAPS accounts which could cause issues during setup or cycling the password.
+
 # macOSLAPS - v2.2.1
 
 # - Check for existing duplicate admin account
