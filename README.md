@@ -20,7 +20,7 @@ The LAPS Script also includes the ability to redirect notifications to Slack usi
 
 To help encode your API credentials there is a small script in this git [Encode API Credentials](https://github.com/PezzaD84/macOSLAPS/blob/main/Encode%20API%20Credentials)
 
-v2.2.1 now uploaded and available. Check the [Change log](https://github.com/PezzaD84/macOSLAPS/blob/main/Change%20Log) for changes and improvments.
+v2.2.2 now uploaded and available. Check the [Change log](https://github.com/PezzaD84/macOSLAPS/blob/main/Change%20Log) for changes and improvments.
 
 LAPS v2 uses Swift Dialog the original project can be found here [Swift Dialog](https://github.com/bartreardon/swiftDialog)
 All credit for swift Dialog goes to the owner and creator please support their project.
