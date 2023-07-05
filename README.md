@@ -2,21 +2,10 @@
 
 # macOSLAPS
 
-
-**Sections**
->- [Initial Setup](https://github.com/PezzaD84/macOSLAPS#setup)
->- [Decoder App Setup](https://github.com/PezzaD84/macOSLAPS#decoder-self-service-app)
->- [Inventory View](https://github.com/PezzaD84/macOSLAPS#computer-inventory-display)
->- [Addtional Extension Attributes](https://github.com/PezzaD84/macOSLAPS#Additional-Extension-Attributes)
->- [Slack Intergration](https://github.com/PezzaD84/macOSLAPS#slack-integration)
->- [Troubleshooting](https://github.com/PezzaD84/macOSLAPS#Troubleshooting)
-<br>
-<br>
-
 ---
 LAPS solution for macOS managed with Jamf
 
-Below is a guide for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encodes the password, uploads the encoded password to Jamf and then a self service app is used to decode and show the local admin password to your engineers.
+Please see the [Wiki page](https://github.com/PezzaD84/macOSLAPS/wiki) for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encodes the password, uploads the encoded password to Jamf and then a self service app is used to decode and show the local admin password to your engineers.
 
 The LAPS Script also includes the ability to redirect notifications to Slack using the WebHooks app. (Thanks Martijn for the idea https://github.com/ons-mart)
 
