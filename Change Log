@@ -1,5 +1,12 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2.2.3
+
+## New password rotation control
+    New functionality has been added to set a time (in minutes) to reset the LAPS password after it is viewed from the decoder script. This is controlled via a launch daemon which is created once the decoder app has run and is cleaned up after the creat & cycle script has been run.
+## Password automatically copied to clipboard
+    Once the password is viewed in the decoder app it will automatically be copied to the clipboard to avoid missing the password or copying it incorrectly.
+
 # macOSLAPS - v2.2.2
 
 ## Additional Error Checking added
