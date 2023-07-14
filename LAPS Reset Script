@@ -93,20 +93,6 @@ secretID=$(curl -s -X "GET" "$6/JSSResource/computers/serialnumber/$serial/subse
 	-d "<computer><extension_attributes><extension_attribute><id>$secretID</id><name>LAPS Secret</name><type>String</type><value></value></extension_attribute></extension_attributes></computer>"
 	
 ############################################################################
-# Reset rotation switch
-############################################################################
-
-echo "Resetting LAPS Rotation switch....."
-
-resetID=$(curl -s -X "GET" "$6/JSSResource/computers/serialnumber/$serial/subset/ExtensionAttributes" -H "Accept: application/json" -H "Authorization:Bearer ${token}" | tr '{' '\n' | grep -i Reset | tr ':' ' ' | tr ',' ' ' | awk '{print $2}')
-		
-	curl -s -X "PUT" "$6/JSSResource/computers/serialnumber/$serial/subset/extension_attributes" \
-	-H "Content-Type: application/xml" \
-	-H "Accept: application/xml" \
-	-H "Authorization:Bearer ${token}" \
-	-d "<computer><extension_attributes><extension_attribute><id>$resetID</id><name>LAPS Reset Password</name><type>String</type><value></value></extension_attribute></extension_attributes></computer>"
-
-############################################################################
 # LAPS Account Removal
 ############################################################################
 
