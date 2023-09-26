@@ -6,6 +6,8 @@ Change log of feature updates and improvments
     Logging has been adjusted to reduce the size of the script. No log information has been removed though and full logging is still available.
 ## Active Session check
     A check has been added to the script to make sure the LAPS account doesn't have an active session before resetting the password.
+## Support for device names with special charaters
+    Support has been added for device names with spaces and special characters. For example a space in a name with now be changed to %20
 
 # macOSLAPS - v2.2.3
 
