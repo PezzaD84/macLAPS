@@ -1,5 +1,12 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2.2.4
+
+## New log method
+    Logging has been adjusted to reduce the size of the script. No log information has been removed though and full logging is still available.
+## Active Session check
+    A check has been added to the script to make sure the LAPS account doesn't have an active session before resetting the password.
+
 # macOSLAPS - v2.2.3
 
 ## New password rotation control
