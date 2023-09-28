@@ -8,6 +8,8 @@ Change log of feature updates and improvments
     A check has been added to the script to make sure the LAPS account doesn't have an active session before resetting the password.
 ## Support for device names with special charaters
     Support has been added for device names with spaces and special characters. For example a space in a name with now be changed to %20
+## Decode the password via Hostname or Serial number
+    Support has been added to retrive the LAPS password using either the serial number or Hostname of the device.
 
 # macOSLAPS - v2.2.3
 
