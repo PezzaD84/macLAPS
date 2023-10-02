@@ -1,5 +1,14 @@
 Change log of feature updates and improvments
 
+# macOSLAPS - v2.3
+
+## Teams Integration added
+    Support for Teams webhooks has now been added and notification can be sent to either Teams, Slack or both.
+## Media items moved to cloud
+    Icons and banner images have all now been moved to cloud storage so there is no longer a need to install the branding package.
+## Slack Notification changes
+    Some changes have been made to the slack notification to bring them inline with the new Teams notifications.
+
 # macOSLAPS - v2.2.4
 
 ## New log method
