@@ -11,7 +11,7 @@ v2.3 now uploaded and available. Check the [Change log](https://github.com/Pezza
 
 Please see the [Wiki page](https://github.com/PezzaD84/macOSLAPS/wiki) for setting up LAPS for macOS on your Jamf instance. The LAPS solution creates the local admin account, randomises and encodes the password, uploads the encoded password to Jamf and then a self service app is used to decode and show the local admin password to your engineers.
 
-The LAPS Script also includes the ability to redirect notifications to Slack using the WebHooks app. (Thanks Martijn for the idea https://github.com/ons-mart)
+The LAPS Script also includes the ability to redirect notifications to Slack and Teams using the WebHooks app. (Thanks Martijn for the idea https://github.com/ons-mart and thanks to https://github.com/nirvanaboi10 for the Teams code)
 
 To help encode your API credentials there is a small script in this git [Encode API Credentials](https://github.com/PezzaD84/macOSLAPS/blob/main/Encode%20API%20Credentials)
 
