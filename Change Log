@@ -1,5 +1,12 @@
 Change log of feature updates and improvments
 
+# macOSLAPS Decoder - v2.3.1
+
+## Cloud branding bug
+    An issue was found with the cloud branding icons and banner image. This has now been fixed.
+## LaunchDaemon always created
+    The LaunchDaemon to kick of the password reset was found to always be created even if a time had not been set. This has now been fixed to only be created if a time has been set to reset the password once viewed.
+
 # macOSLAPS - v2.3
 
 ## Teams Integration added
