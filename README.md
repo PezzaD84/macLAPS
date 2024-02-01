@@ -1,4 +1,4 @@
-[![Latest-Version](https://img.shields.io/badge/Latest_Version-2.3-green)](https://github.com/PezzaD84/macOSLAPS/releases) ![macOS-Versions](https://img.shields.io/badge/macOS-11+-blue) ![Script-Language](https://img.shields.io/badge/Coding_Language-Bash-blue) [![Powered-by](https://img.shields.io/badge/Powered_by-SwiftDialog-red)](https://github.com/bartreardon/swiftDialog) [![JNUC 23 Recording](https://img.shields.io/badge/JNUC_23_Session-YouTube-purple)]([https://github.com/bartreardon/swiftDialog](https://www.youtube.com/watch?v=g8CaU6ReYvE&t=1s&ab_channel=Jamf))
+[![Latest-Version](https://img.shields.io/badge/Latest_Version-2.3-green)](https://github.com/PezzaD84/macOSLAPS/releases) ![macOS-Versions](https://img.shields.io/badge/macOS-11+-blue) ![Script-Language](https://img.shields.io/badge/Coding_Language-Bash-blue) [![Powered-by](https://img.shields.io/badge/Powered_by-SwiftDialog-red)](https://github.com/bartreardon/swiftDialog) [![JNUC 23 Recording](https://img.shields.io/badge/JNUC_23_Session-YouTube-purple)](https://www.youtube.com/watch?v=g8CaU6ReYvE&t=1s&ab_channel=Jamf)
 
 # macLAPS
 
