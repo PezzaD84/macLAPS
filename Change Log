@@ -1,5 +1,10 @@
 Change log of feature updates and improvments
 
+# macLASP Decoder - v2.3.2
+
+## View order changed
+    The order of the dropdown box and text fields has now been reordered with the dropdown at the top of the window and the text fields at the bottom.
+
 # macOSLAPS Decoder - v2.3.1
 
 ## Cloud branding bug
