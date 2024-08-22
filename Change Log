@@ -1,6 +1,12 @@
 Change log of feature updates and improvments
 
-# macLASP Decoder - v2.3.2
+# macLAPS - v2.3.1
+# macLAPS Decoder - v2.3.3
+
+## Debug mode
+    Debug mode has now been added. This allows the script to be ran in debug mode for troubleshooting purposes. The script will echo out a number of extra items that usually are used behind the scenens. Passwords WILL NOT be echoed out.
+
+# macLAPS Decoder - v2.3.2
 
 ## View order changed
     The order of the dropdown box and text fields has now been reordered with the dropdown at the top of the window and the text fields at the bottom.
