@@ -5,6 +5,8 @@ Change log of feature updates and improvments
 
 ## Debug mode
     Debug mode has now been added. This allows the script to be run in debug mode for troubleshooting purposes. The script will echo out a number of extra items to the logs that usually are used behind the scenes. Passwords WILL NOT be echoed out.
+## BugFix
+    Curl command for reading and writting the Secret Key has been updated to avoid potentially searching for similar named extension attributes.
 
 # macLAPS Decoder - v2.3.2
 
