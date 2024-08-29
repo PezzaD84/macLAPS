@@ -3,7 +3,9 @@
 # macLAPS
 
 ---
-LAPS solution for macOS managed with Jamf
+LAPS solution for macOS managed with Jamf 
+
+**macOS Sequoia compatible**
 
 **Check out the video recording of my JNUC 23 session all about my LAPS tool [HERE](https://www.youtube.com/watch?v=g8CaU6ReYvE&t=1s&ab_channel=Jamf)**
 
